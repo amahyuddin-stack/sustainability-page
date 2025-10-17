@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Newsletter | Ghostwriting Service</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: #ffffff;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e5631 0%, #2d7a4a 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            font-weight: 300;
+            letter-spacing: -1px;
+        }
+        
+        header p {
+            font-size: 1.3em;
+            opacity: 0.95;
+            max-width: 800px;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+        
+        section {
+            padding: 70px 20px;
+        }
+        
+        section:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        h2 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            color: #1e5631;
+            text-align: center;
+            font-weight: 400;
+        }
+        
+        .intro-text {
+            font-size: 1.2em;
+            max-width: 850px;
+            margin: 0 auto 50px;
+            text-align: center;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.12);
+        }
+        
+        .service-card h3 {
+            font-size: 1.6em;
+            color: #1e5631;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        
+        .service-card .icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        
+        .service-card ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        .service-card li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .service-card li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #2d7a4a;
+            font-weight: bold;
+        }
+        
+        .expertise {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 40px auto;
+            max-width: 900px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+        }
+        
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .expertise-item {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 4px solid #2d7a4a;
+        }
+        
+        .expertise-item h4 {
+            color: #1e5631;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .bio-section {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+        }
+        
+        .bio-section p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            line-height: 1.9;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-item .number {
+            font-size: 3.5em;
+            color: #2d7a4a;
+            font-weight: 300;
+            display: block;
+        }
+        
+        .stat-item .label {
+            font-size: 1.1em;
+            color: #666;
+            margin-top: 10px;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #1e5631 0%, #2d7a4a 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 25px;
+        }
+        
+        .cta-section p {
+            font-size: 1.3em;
+            margin-bottom: 35px;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #1e5631;
+            padding: 18px 45px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        footer p {
+            opacity: 0.8;
+        }
+        
+        .highlight {
+            color: #2d7a4a;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            
+            header p {
+                font-size: 1.1em;
+            }
+            
+            h2 {
+                font-size: 1.8em;
+            }
+            
+            .services {
+                grid-template-columns: 1fr;
+            }
+            
+            .bio-section {
+                padding: 30px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sustainability Ghostwriter</h1>
+            <p>Turning complexities into credible stories that withstand scrutiny</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <p class="intro-text">
+                I help sustainability executives and leaders tell stories that build trust—because I've been on both sides of that conversation. With <span class="highlight">17 years in environmental advocacy</span> and <span class="highlight">9 years as a journalist</span>, I understand what makes sustainability communications credible.
+            </p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="number">26+</span>
+                    <span class="label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="number">17</span>
+                    <span class="label">Years in Environmental NGO</span>
+                </div>
+                <div class="stat-item">
+                    <span class="number">9</span>
+                    <span class="label">Years in Journalism</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Who I Work With</h2>
+            
+            <div class="services">
+                <div class="service-card">
+                    <div class="icon">🌿</div>
+                    <h3>Sustainability Directors</h3>
+                    <p>Chief Sustainability Officers at corporations navigating deforestation, supply chain transparency, and climate commitments.</p>
+                    <ul>
+                        <li>LinkedIn thought leadership</li>
+                        <li>Stakeholder communications</li>
+                        <li>Crisis response narratives</li>
+                    </ul>
+                </div>
+               </section>
+
+    <section>
+        <div class="container">
+            <h2>What Makes My Approach Different</h2>
+            
+            <div class="expertise">
+                <p style="text-align: center; font-size: 1.15em; margin-bottom: 30px;">
+                    I've spent years in the field, not just writing about sustainability, but living it. This gives me a perspective most ghostwriters don't have.
+                </p>
+                
+                <div class="expertise-grid">
+                    <div class="expertise-item">
+                        <h4>🔍 Investigative Rigor</h4>
+                        <p>9 years as a reporter covering conflicts, economics, and environmental issues for newspapers, TV, radio, and international newswires.</p>
+                    </div>
+                    
+                    <div class="expertise-item">
+                        <h4>🤝 Ground-Level Experience</h4>
+                        <p>17 years of campaigning for impact on corporate sustainability commitment, managing sustainability field visits, publishing investigative reports on palm oil and forestry practices, and communicating them with companies.</p>
+                    </div>
+                    
+                                       
+                    <div class="expertise-item">
+                        <h4>🌏 Southeast Asia Expertise</h4>
+                        <p>Deep understanding of Indonesia's palm oil, forestry, and land conflict dynamics—the regulatory environment, cultural context, and stakeholder landscape.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>About Afdhal Mahyuddin</h2>
+            
+            <div class="bio-section">
+                <p>
+                    For nearly three decades, I've worked at the intersection of storytelling and sustainability—first as a journalist holding power accountable, then as an environmental communicator helping organizations navigate the complex reality of sustainability commitments.
+                </p>
+                
+                <p>
+                    My journalism career spanned <strong>9 years</strong>, covering national conflicts, economic news, and environmental issues for newspapers, weekly business magazines, TV stations, news radio, online portals, and foreign newswires. I learned to ask hard questions, verify facts, and write stories that mattered.
+                </p>
+                
+                <p>
+                    Then I spent <strong>17 years</strong> in environmental NGO communications, where I managed bilingual websites, conducted media engagement, facilitated field visits for sustainability corporates, published investigative reports on unsustainable practices, led campaigns and advocacy efforts, trained communities, managed multistakeholder engagements, and oversaw program management.
+                </p>
+                
+                <p>
+                    I've stood in rainforests with community leaders whose land was cleared. I've sat in boardrooms with executives trying to fulfill impossible-sounding commitments. I've written the investigative reports that expose greenwashing, and I've helped craft the communications strategies that demonstrate genuine progress.
+                </p>
+                
+                <p>
+                    <strong>Today, I bring all of that experience to my ghostwriting work</strong>—helping sustainability leaders tell stories that are credible, compelling, and built to withstand scrutiny.
+                </p>
+                
+                <p style="margin-top: 30px; padding-top: 30px; border-top: 2px solid #e0e0e0;">
+                    <em>Currently based in Pekanbaru, Indonesia. Also working on a memoir about two decades at the frontlines of environmental activism and journalism.</em>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Let's Talk About Your Story</h2>
+            <p>Whether you're navigating ESG communications challenges or need to differentiate your impact thesis, I'd love to explore how storytelling can help.</p>
+            <a href="mailto:your.email@example.com" class="cta-button">Get In Touch</a>
+            <p style="margin-top: 25px; font-size: 1em;">📍 Based in Pekanbaru, Indonesia | Working with clients globally</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sustainability Ghostwriter. All rights reserved.</p>
+            <p style="margin-top: 10px;">Bridging the rainforest and the boardroom through credible storytelling.</p>
+        </div>
+    </footer>
+</body>
+</html>
